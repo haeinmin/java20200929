@@ -18,7 +18,7 @@ public class StringEx1 {
 		System.out.println(str2 == str6);
 		System.out.println(str2.equals(str6));
 		
-		//indexOf n번째 문자열 출력
+		//indexOf 문자열 출력
 		String str7 = "자바 프로그래밍";
 		int index = str7.indexOf("로");
 		int index1 = str7.indexOf("자바로"); //-1 출력됨. 존재하지 않는 문자열이라서.
