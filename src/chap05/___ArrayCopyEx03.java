@@ -3,10 +3,10 @@ package chap05;
 public class ___ArrayCopyEx03 {
 	public static void main(String[] args) {
 		int[][] arr1 = { {3,4}, {88,99}, {2,1} };
-		int[][] arr2 = new int[arr1.length][];
+		int[][] arr2 = new int[arr1.length][]; //null null null
 		
 		for (int i=0; i<arr1.length; i++) {
-			int[] newArr = new int[arr1[i].length];
+			int[] newArr = new int[arr1[i].length]; //new int[3]
 			
 			for (int j=0; j<arr1[i].length; j++) {
 				newArr[j] = arr1[i][j];
