@@ -2,6 +2,7 @@ package chap11.string;
 
 public class StringEx1 {
 	public static void main(String[] args) {
+		//abs
 		// charAt
 		String str1 = "java";
 		char c1 = str1.charAt(2);
