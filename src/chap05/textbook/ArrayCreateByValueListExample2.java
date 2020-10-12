@@ -1,6 +1,6 @@
 package chap05.textbook;
 
-public class ___ArrayCreateByValueListExample2 {
+public class ArrayCreateByValueListExample2 {
 	public static void main(String[] args) {
 		int[] scores;
 		scores = new int[] {83,90,87};
@@ -18,6 +18,7 @@ public class ___ArrayCreateByValueListExample2 {
 	}
 
 	public static int add(int[] scores) { //이게 function 같은 기능?
+											// ㅇㅇ java에서는 이를 method라 부름
 
 		int sum = 0;
 		for (int i = 0; i < 3; i++) {
