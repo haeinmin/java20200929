@@ -6,13 +6,15 @@ public class Exercise08 {
 		
 		int sum = 0;
 		double avg = 0.0;
-		double length = 0.0;
+		int cnt = 0;
+//		double length = 0.0;
 		
 		for (int i=0; i<array.length; i++) {
-			length += array[i].length;
+//			length += array[i].length;
 			for(int j=0; j<array[i].length; j++) {
 				sum += array[i][j];
-				avg = sum / length;
+				cnt++;
+				avg = (double) sum / cnt;
 			}
 		}
 		
