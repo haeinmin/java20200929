@@ -1,6 +1,6 @@
 package chap05;
 
-public class ____ReferenceType5 {
+public class ReferenceType5 {
 	public static void main(String[] args) {
 		String str1 = "java";
 		String str2 = new String("java");
