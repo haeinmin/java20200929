@@ -1,4 +1,4 @@
-package chap07.lecture;
+package chap07.lecture.extendsKeyword;
 
 public class MyApp1 {
 	public static void main(String[] args) {

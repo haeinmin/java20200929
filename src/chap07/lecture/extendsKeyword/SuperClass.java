@@ -1,4 +1,4 @@
-package chap07.lecture;
+package chap07.lecture.extendsKeyword;
 
 public class SuperClass {
 	int var1;
