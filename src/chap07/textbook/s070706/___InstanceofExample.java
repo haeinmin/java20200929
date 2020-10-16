@@ -1,6 +1,6 @@
 package chap07.textbook.s070706;
 
-public class InstanceofExample {
+public class ___InstanceofExample {
 	public static void method1(Parent parent) {
 		if(parent instanceof Child) {
 			Child child = (Child) parent;
