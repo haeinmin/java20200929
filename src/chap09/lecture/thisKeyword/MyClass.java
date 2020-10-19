@@ -1,0 +1,17 @@
+package chap09.lecture.thisKeyword;
+
+public class MyClass {
+	int field1;	//1
+	
+	class Nested {
+		int field1; //2
+		
+		void method() {
+			int field1 = 3; //3
+			System.out.println(field1); //3
+			System.out.println(this.field1); //2
+			System.out.println(MyClass.this.field1); //1
+		}
+	}
+
+}

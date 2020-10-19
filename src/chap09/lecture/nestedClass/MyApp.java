@@ -1,3 +1,4 @@
+
 package chap09.lecture.nestedClass;
 
 public class MyApp {
