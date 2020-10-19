@@ -17,6 +17,11 @@ public class MyApp {
 		r1.setVolume(3);
 //		r1.search("google");
 		
+		
+		System.out.println(r1 instanceof RemoteControl);
+		System.out.println(r1 instanceof Searchable); //r1이 가르키는 것은 SmartTelevision, 얘는 searchable의 구현 클래스이므로 가능
+		System.out.println(s1 instanceof RemoteControl);
+		
 	}
 
 }
