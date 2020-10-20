@@ -4,6 +4,7 @@ public class Chatting {
 	void startChar(String chatId) {
 		String nickName = null;
 		nickName = chatId;
+		final String nickNamecopy = nickName; //final 형태로 만들어주기 위해
 		Chat chat = new Chat() {
 			@Override
 			public void start() {
