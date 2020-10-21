@@ -1,4 +1,4 @@
-package chap11.objecttoString;
+package chap11.object.toString;
 
 public class MyClass extends Object { //있든 없든 무조건 extends Object 왜냐하면 모든 클래슨느 object 하위
 	

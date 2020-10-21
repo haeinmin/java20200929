@@ -1,4 +1,4 @@
-package chap11.objecttoString;
+package chap11.object.toString;
 
 public class ToStringEx1 {
 	public static void main(String[] args) {
