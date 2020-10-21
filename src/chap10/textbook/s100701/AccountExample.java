@@ -1,5 +1,7 @@
 package chap10.textbook.s100701;
 
+import chap05.lecture.Account;
+
 public class AccountExample {
 	public static void main(String[] args) {
 		Account account = new Account();
