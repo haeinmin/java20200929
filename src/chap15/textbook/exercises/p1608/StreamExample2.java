@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class StreamExample {
+public class StreamExample2 {
 	static class Member {
 		private String name;
 		private String job;
@@ -33,34 +33,36 @@ public class StreamExample {
 				new Member("신용권", "개발자")
 				);
 
-		Map<String, List<String>> groupingMap = new HashMap<>();
+//		Map<String, List<String>> groupingMap = new HashMap<>();
+		
+		List<String> devNames = new ArrayList<>();
+		List<String> desNames = new ArrayList<>();
 		
 		for (Member member : list) {
-			String name = member.getName();
-			String job = member.getJob();
-			
-			List<String> names = groupingMap.get(job); //직업별로 이름 구분하기
-			if (names == null) {
-				List<String> newList = new ArrayList<>();
-				newList.add(name);
-				groupingMap.put(job, newList);
-			} else {
-				names.add(name);
+			if (member.getJob().equals("개발자")) {
+				devNames.add(member.getName());
 			}
 		}
 		
+		for (Member member : list) {
+			if (member.getJob().equals("디자이너")) {
+				desNames.add(member.getName());
+			}
+		}
+		
+		
 		// 출력
-		List<String> developers = groupingMap.get("개발자");
-		List<String> designers = groupingMap.get("디자이너");
+//		List<String> developers = groupingMap.get("개발자");
+//		List<String> designers = groupingMap.get("디자이너");
 		
 		System.out.print("[개발자]");
-		for (String name : developers) {
+		for (String name : devNames) {
 			System.out.print(" " + name);
 		}
 		System.out.println();
 		
 		System.out.print("[디자이너]");
-		for (String name : designers) {
+		for (String name : desNames) {
 			System.out.print(" " + name);
 		}
 	}
