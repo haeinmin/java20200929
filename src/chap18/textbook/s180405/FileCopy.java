@@ -25,6 +25,13 @@ public class FileCopy {
 			writer.write(data);
 		}
 		
+		/* 배열이 아닌 한 문자씩 읽기
+		 int data;
+		 while ((data = reader.read()) != -1) {
+		 	writer.write(data);
+		 }
+		 */
+		
 		reader.close();
 		writer.close();
 	
